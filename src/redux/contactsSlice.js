@@ -1,10 +1,10 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { initialState } from './contact/initialState';
+import { contactsInitialState } from './contact/initialState';
 import { nanoid } from 'nanoid';
 
 const contactsSlice = createSlice({
   name: 'contacts',
-  initialState,
+  initialState: contactsInitialState,
 
   reducers: {
     deleteContact: (state, { type, payload }) => {
